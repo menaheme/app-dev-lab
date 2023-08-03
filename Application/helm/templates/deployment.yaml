@@ -40,11 +40,11 @@ spec:
               path: {{ .Values.probes.liveliness.path }}
               port: {{ .Values.containers.containerPort }}
               scheme: HTTP
-            initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds }}
-            timeoutSeconds: {{ .Values.probes.readiness.timeoutSeconds }}
-            periodSeconds: {{ .Values.probes.readiness.periodSeconds }} # the abount of time to wait between checks
-            successThreshold: {{ .Values.probes.readiness.successThreshold }} # count to decalre seccessfull 
-            failureThreshold: {{ .Values.probes.readiness.failureThreshold }} # count to decalre failure
+            initialDelaySeconds: {{ .Values.probes.liveness.initialDelaySeconds }}
+            timeoutSeconds: {{ .Values.probes.liveness.timeoutSeconds }}
+            periodSeconds: {{ .Values.probes.liveness.periodSeconds }} # the abount of time to wait between checks
+            successThreshold: {{ .Values.probes.liveness.successThreshold }} # count to decalre seccessfull 
+            failureThreshold: {{ .Values.probes.liveness.failureThreshold }} # count to decalre failure
           env:
           - name: PORT
             value: {{ .Values.containers.containerPort | quote }}
