@@ -27,3 +27,5 @@ probes:
 volumes:
   mount:
     path: '/tmp/html'
+
+test: Healthy
