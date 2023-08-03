@@ -29,3 +29,8 @@ volumes:
     path: '/tmp/html'
 
 test: Healthy
+
+github:
+  user: # Your GitHub User name
+  token: empty-pass
+  url: https://github.com/menaheme/app-dev-lab/issues
