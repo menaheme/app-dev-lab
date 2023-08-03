@@ -7,3 +7,22 @@ containers:
 
 service:
   servicePort: 8080
+
+probes:
+  readiness: 
+    path: '/health/readiness'
+    initialDelaySeconds: 1 # the time is waiting befor testing the application path
+    timeoutSeconds: 1 # the time for timeout
+    periodSeconds: 10 # the abount of time to wait between checks
+    successThreshold: 1 # count to decalre seccessfull 
+    failureThreshold: 3 # count to decalre failure
+  liveness:
+    path: '/health/liveliness'
+    initialDelaySeconds: 1 # the time is waiting befor testing the application path
+    timeoutSeconds: 1 # the time for timeout
+    periodSeconds: 10 # the abount of time to wait between checks
+    successThreshold: 1 # count to decalre seccessfull 
+    failureThreshold: 3 # count to decalre failure
+  volumes:
+    mount:
+      path: '/tmp/html'
