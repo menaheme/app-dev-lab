@@ -9,11 +9,11 @@ spec:
   replicas: {{ .Values.ReplicaNumber }}
   selector:
     matchLabels:
-      app1: {{ .Release.Name }}-1
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app1: {{ .Release.Name }}-1
+        app: {{ .Release.Name }}
     spec:
       containers:
         - resources: {}
