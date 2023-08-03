@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: index.html
   annotations:
-   argocd.argoproj.io/sync-wave: "100"
+   argocd.argoproj.io/sync-wave: "1"
 immutable: false
 data:
 {{ (.Files.Glob "html/*").AsConfig | indent 2 }}  
