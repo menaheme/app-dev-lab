@@ -33,5 +33,5 @@ test: Null
 github:
   user: menaheme # Your GitHub User name
   token: empty-pass
-  url: 'https://github.com/menaheme/app-dev-lab/issues'
+  url: 'https://api.github.com/repos/menaheme/app-dev-lab/issues'
   
