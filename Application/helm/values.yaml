@@ -31,6 +31,6 @@ volumes:
 test: Healthy
 
 github:
-  user: # Your GitHub User name
+  user: menaheme # Your GitHub User name
   token: empty-pass
   url: https://github.com/menaheme/app-dev-lab/issues
