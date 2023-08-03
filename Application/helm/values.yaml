@@ -28,7 +28,7 @@ volumes:
   mount:
     path: '/tmp/html'
 
-test: Healthy
+test: Null
 
 github:
   user: menaheme # Your GitHub User name
