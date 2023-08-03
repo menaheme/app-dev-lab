@@ -6,4 +6,4 @@ metadata:
    argocd.argoproj.io/sync-wave: "1"
 immutable: false
 data:
-{{ (.Files.Glob "html/*").AsConfig | indent 2 }} 
+{{ (.Files.Glob "html/*").AsConfig | indent 2 }}  
