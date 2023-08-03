@@ -28,4 +28,4 @@ volumes:
   mount:
     path: '/tmp/html'
 
-test: Healthy
+test: Null
